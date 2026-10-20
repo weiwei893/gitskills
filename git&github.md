@@ -24,11 +24,15 @@ $ git init(可以直接克隆，不要这一步)
 
 
 
+$ rm -rf .git 解除.git追踪。
+
+
+
 文件一定要放在工作区（对应文件夹）
 
 把文件存进Git仓库，每次修改了文件都要执行
 
-$ git add *readme.txt（文件名)*     把文件放进暂存区
+$ git add “*readme.txt”（文件名)*     把文件放进暂存区
 
 $ git commit -m *"wrote a readme file"(提交时备注内容)*
 
@@ -44,7 +48,7 @@ $ git diff *readme.txt* *（文件名）*
 
 查看工作区和版本库里面最新版本的区别
 
-$ git diff HEAD -- readme.txt 
+$ git diff HEAD -- readme.txt
 
 
 
@@ -101,6 +105,7 @@ $ git remote add origin git@github.com:*github用户名*/*learngit.git（Github�
 把本地库的所有内容推送到远程库
 
 $ git push -u origin master(main)
+
 $ git push origin master(main)
 
 
